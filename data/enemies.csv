@@ -1,0 +1,7 @@
+id,name,max_hp,defense,magic_defense,gold_reward,exp_reward,equipment_reward,action_set_id,sprite,sprite_width,sprite_height
+goblin_raider,Goblin Raider,420,8,5,80,35,Crystal Shard,goblin_basic,assets/sprites/enemies/goblin-raider.png,233,218
+crystal_knight,Crystal Knight,620,14,10,160,70,Crystal Shard,crystal_knight,assets/sprites/enemies/crystal-knight.png,265,291
+iron_ogre,Iron Ogre,980,18,12,240,105,Ogre Plate,iron_ogre,assets/sprites/enemies/iron-ogre.png,285,291
+ember_prophet,Ember Prophet,760,12,18,210,95,Ember Coat,ember_prophet,assets/sprites/enemies/ember-prophet.png,265,291
+storm_clockwork,Storm Clockwork,860,16,14,240,110,Clockwork Lens,storm_clockwork,assets/sprites/enemies/storm-clockwork.png,300,300
+plague_chimera,Plague Chimera,1040,17,16,300,140,Chimera Fang,plague_chimera,assets/sprites/enemies/plague-chimera.png,320,250

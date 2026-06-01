@@ -1,0 +1,20 @@
+id,name,type,danger,hint,target_rule,range_rule,attack_modifier,effect_type,damage_type,provokeable,interruptible
+front_cleave,Front Cleave,Range / Physical,Med,Move out of the flashing front side.,none,front_half,1.80,damage,Physical,false,false
+random_strike,Savage Strike,Single / Physical,Med,Single target attack. Provoke can redirect it.,single_random,single,1.90,damage,Physical,true,false
+heavy_smash,Heavy Smash,Tankbuster / Physical,High,Tank must survive with Guard Wall healing or support.,tankbuster,single,2.25,damage,Physical,false,false
+earth_roar,Earth Roar,All / Physical,Med,Party-wide hit. Cannot be provoked.,party,all,1.35,damage,Physical,false,false
+stack_marker,Crushing Meteor,Stack / Magic,High,Gather on target. Cannot be provoked.,fixed_random,stack_cell,2.80,stack_damage,Magic,false,false
+brutal_cast,Brutal Cast,Cast / Magic / Interruptible,High,Use Leg Sweep before it resolves.,party,all,2.05,damage,Magic,false,true
+crush_armor,Crush Armor,Role Target / Physical,Med,Aims at a weaker member. Guard or heal them.,weak_non_tank,single,1.65,debuff,Physical,false,false
+cinder_drop,Cinder Drop,Fire / Hazard,Med,Three fire squares burn for 2 turns.,hazard_random,hazard_cells,1.25,hazard,Magic,false,false
+wildfire_bait,Wildfire Bait,Fire / Chase,High,Targeted square burns. Bait it away from stack paths.,single_random,single,1.70,hazard,Magic,false,false
+gravity_crush,Gravity Crush,Stack / Magic,High,Gather on target to share the crushing hit.,fixed_random,stack_cell,3.40,stack_damage,Magic,false,false
+furnace_roar,Furnace Roar,All / Fire,High,Raidwide fire. Guard Wall and Cura stabilize after.,party,all,1.95,damage,Magic,false,false
+twin_beam,Twin Beam,Rotating Laser,High,Two wide laser lanes rotate each use.,none,rotating_laser,1.90,damage,Magic,false,false
+clock_tower,Clock Tower,Tower / Soak,High,Stand in marked tower or it explodes raidwide.,tower_random,tower_cells,1.55,tower,Magic,false,false
+overclock_charge,Overclock,Charge / Interruptible,High,Interrupt the charge or prepare for heavy raidwide.,party,none,0,charge,Magic,false,true
+overclock_beam,Overclock Beam,Charged Raidwide,High,Charged beam. Guard Wall and Cura if charge was not stopped.,party,all,2.70,damage,Magic,false,false
+toxic_needle,Toxic Needle,Debuff / Poison,Med,Poisons a weak ally. Esuna or heal through it.,weak_non_tank,single,1.30,debuff,Physical,true,false
+ice_prison,Ice Prison,Bind / Magic,High,Locks movement. Cover the prisoner or cleanse them.,fixed_random,single,1.20,debuff,Magic,false,false
+shatter_lock,Shatter Lock,Prison Punish,High,Targets imprisoned ally. Cover or Guard Wall if still bound.,immobilized,single,2.65,damage,Magic,true,false
+dragon_voice,Dragon Voice,Wide Edge Blast,High,Top and bottom edges explode. Move to side-middle safe cells.,none,edge_blast,1.90,damage,Magic,false,false

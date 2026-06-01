@@ -1,0 +1,5 @@
+2026/05/27-16:21:10.770 17e8 Creating DB D:\Projects\TurnBasedFFXIV\.tmp\edge-job-switch-check\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/05/27-16:21:10.783 17e8 Reusing MANIFEST D:\Projects\TurnBasedFFXIV\.tmp\edge-job-switch-check\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/27-16:21:11.061 ad48 Level-0 table #5: started
+2026/05/27-16:21:11.068 ad48 Level-0 table #5: 682633 bytes OK
+2026/05/27-16:21:11.070 ad48 Delete type=0 #3

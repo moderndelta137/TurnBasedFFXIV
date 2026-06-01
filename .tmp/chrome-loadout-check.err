@@ -1,0 +1,11 @@
+[38004:37012:0527/160248.020:ERROR:chrome\installer\util\google_update_settings_win.cc:270] Failed opening key Software\Google\Update\ClientStateMedium\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5
+[38004:37012:0527/160248.138:ERROR:chrome\browser\extensions\external_registry_loader_win.cc:168] File C:\Users\d-mao\AppData\Local\ChromeExtensionCache\xl_ext_chrome.crx for key Software\Google\Chrome\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo can not be read. Check that users who should have the extension installed have permission to read it.
+
+DevTools listening on ws://127.0.0.1:9333/devtools/browser/3ce3c75a-356f-423c-bfb6-0d374af0cdd3
+[38004:34276:0527/160248.464:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.621:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.662:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.699:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.741:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.774:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073741790
+[38004:34276:0527/160248.774:FATAL:content\browser\gpu\gpu_data_manager_impl_private.cc:417] GPU process isn't usable. Goodbye.

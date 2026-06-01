@@ -1,0 +1,11 @@
+{
+  "name": "turn-based-ffxiv",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mobile-first co-op turn-based RPG prototype.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs"
+  }
+}

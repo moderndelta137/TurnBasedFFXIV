@@ -1,0 +1,5 @@
+id,name,role,max_hp,max_resource,resource_type,attack,magic,defense,move_type,sprite,actions
+WAR,Warrior,tank,620,100,TP,22,4,18,step1,assets/sprites/ffrk/warrior.png,strike|provoke|cover|guard_wall
+WHM,White Mage,healer,470,80,MP,9,20,10,step1,assets/sprites/ffrk/white-mage.png,smite|cure|cura|esuna
+BLM,Black Mage,ranged,430,90,MP,6,28,8,teleport,assets/sprites/ffrk/black-mage.png,fire|firaga|focus|blizzard
+DRG,Dragoon,melee,520,100,TP,25,4,12,step2,assets/sprites/ffrk/dragoon.png,thrust|jump|dragon_dive|leg_sweep

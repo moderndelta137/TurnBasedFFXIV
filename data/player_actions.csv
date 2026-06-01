@@ -1,0 +1,33 @@
+id,name,job,role,timing,cost_type,cost,power,effect_type,target_rule,description
+strike,Strike,WAR,tank,Normal,TP,0,38,physical,enemy,Basic attack. Gains front / side / behind bonus.
+provoke,Provoke,WAR,tank,Fast,TP,10,0,tank,enemy,Redirects provokeable single-target enemy attacks to Warrior.
+cover,Cover,WAR,tank,Fast,TP,10,0,tank,targeted_ally,Protects the ally targeted by a single attack.
+guard_wall,Wall,WAR,tank,Fast,TP,18,0,tank,all_allies,Reduces party damage this turn.
+smite,Smite,WHM,healer,Normal,MP,0,28,magic,enemy,Small holy damage.
+cure,Cure,WHM,healer,Fast,MP,8,92,heal,lowest_hp_ally,Heals the lowest HP ally for double strength.
+cura,Cura,WHM,healer,Slow,MP,18,48,healAll,all_allies,Heals all allies after enemy action.
+esuna,Esuna,WHM,healer,Fast,MP,8,0,cleanse,debuffed_ally,Removes one debuff.
+fire,Fire,BLM,ranged,Normal,MP,8,46,magic,enemy,Single-target fire damage.
+firaga,Firaga,BLM,ranged,Slow,MP,22,90,magic,enemy,Large fire damage after enemy action.
+focus,Focus,BLM,ranged,Fast,MP,0,0,buff,self,Next magic damage is increased.
+blizzard,Ice,BLM,ranged,Normal,MP,10,34,magicWeak,enemy,Damage and weakens next enemy action.
+thrust,Thrust,DRG,melee,Normal,TP,0,42,physical,enemy,Basic melee attack.
+jump,Jump,DRG,melee,Fast,TP,18,56,jump,self_enemy,Avoids attacks then lands after enemy action.
+dragon_dive,Dive,DRG,melee,Normal,TP,24,72,physical,enemy,High single target damage.
+leg_sweep,Sweep,DRG,melee,Fast,TP,16,18,interrupt,casting_enemy,Interrupts casts. Small damage otherwise.
+vengeance,Vengeance,WAR,tank,Normal,TP,20,44,counter,self,Counter next direct hit then strike enemy.
+shield_bash,Shield Bash,WAR,tank,Fast,TP,14,16,interrupt,casting_enemy,Interrupt cast with small damage.
+steel_cyclone,Steel Cyclone,WAR,tank,Slow,TP,28,74,physical,enemy,Heavy tank burst after enemy action.
+rampart,Rampart,WAR,tank,Fast,TP,16,0,tank,self,Reduce self damage before enemy action.
+regen,Regen,WHM,healer,Fast,MP,12,28,regen,lowest_hp_ally,Apply healing over turns before enemy action.
+protect,Protect,WHM,healer,Fast,MP,14,0,shield,targeted_ally,Reduce next hit on enemy-targeted ally.
+medica,Medica,WHM,healer,Normal,MP,20,36,healAll,all_allies,Moderate party heal before enemy action.
+holy,Holy,WHM,healer,Slow,MP,24,68,magicWeak,enemy,Slow holy damage and weakens enemy.
+meteor,Meteor,BLM,ranged,Slow,MP,34,120,magic,enemy,Very large delayed damage.
+mana_barrier,Mana Barrier,BLM,ranged,Fast,MP,16,0,shield,self,Shield self before enemy action.
+transpose,Transpose,BLM,ranged,Fast,MP,0,0,buff,self,Swap into a focused recovery stance.
+thunder,Thunder,BLM,ranged,Normal,MP,12,30,dot,enemy,Apply damage over turns.
+piercing_talon,Talon,DRG,melee,Fast,TP,10,30,physical,enemy,Quick ranged poke before enemy action.
+chaos_thrust,Chaos,DRG,melee,Normal,TP,22,46,dot,enemy,Damage plus bleed over turns.
+elusive_jump,Elusive,DRG,melee,Fast,TP,14,0,jump,self,Move away and avoid next range warning.
+stardiver,Stardiver,DRG,melee,Slow,TP,32,104,physical,enemy,Massive delayed jump strike.

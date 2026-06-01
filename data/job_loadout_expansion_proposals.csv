@@ -1,0 +1,110 @@
+job,category,status,id,name,slot,timing,cost_type,cost,power,effect_type,target_rule,source,purpose,notes
+WAR,action,existing_current,strike,Strike,,Normal,TP,0,38,physical,enemy,player_actions.csv,Basic position-aware tank attack,Default battle action
+WAR,action,existing_current,provoke,Provoke,,Fast,TP,10,0,tank,enemy,player_actions.csv,Redirect provokeable single target attacks,Default battle action
+WAR,action,existing_current,cover,Cover,,Fast,TP,10,0,tank,targeted_ally,player_actions.csv,Protect enemy-targeted ally,Default battle action
+WAR,action,existing_current,guard_wall,Wall,,Fast,TP,18,0,tank,all_allies,player_actions.csv,Reduce party damage this turn,Default battle action
+WAR,equipment,existing_current,mythril_axe,Mythril Axe,Weapon,,,,,,self,index.html,Balanced tank weapon,Current lobby gear
+WAR,equipment,existing_current,aegis_helm,Aegis Helm,Head,,,,,,self,index.html,Physical defense helm,Current lobby gear
+WAR,equipment,existing_current,valor_mail,Valor Mail,Body,,,,,,self,index.html,Tankbuster survival armor,Current lobby gear
+WAR,equipment,existing_current,oath_stone,Oath Stone,Relic,,,,,,self,index.html,Strengthen Guard and Cover,Current lobby gear
+WAR,equipment,existing_pool,bulwark_blade,Bulwark Blade,Weapon,,,,,,self,index.html,Improve Cover and Guard turns,Swap pool
+WAR,equipment,existing_pool,raider_axe,Raider Axe,Weapon,,,,,,self,index.html,Raise Strike damage,Swap pool
+WAR,equipment,existing_pool,iron_sallet,Iron Sallet,Head,,,,,,self,index.html,Steady defense,Swap pool
+WAR,equipment,existing_pool,ogre_plate,Ogre Plate,Body,,,,,,self,index.html,Strong burst damage armor,Swap pool
+WAR,equipment,existing_pool,lion_crest,Lion Crest,Relic,,,,,,self,index.html,Improve Provoke turns,Swap pool
+WAR,passive,existing_pool,iron_will,Iron Will,,,,,,,passive,self,index.html,Start battle with extra threat,Passive swap pool
+WAR,passive,existing_pool,last_stand,Last Stand,,,,,,,passive,self,index.html,Survive lethal damage once per wave,Passive swap pool
+WAR,passive,existing_pool,shield_oath,Oath,,,,,,,passive,self,index.html,Guard Wall reduces more damage,Passive swap pool
+WAR,action,proposed,vengeance,Vengeance,,Normal,TP,20,44,counter,self,new,Counter next direct hit then strike enemy,Adds tank reaction choice
+WAR,action,proposed,shield_bash,Shield Bash,,Fast,TP,14,16,interrupt,casting_enemy,new,Interrupt cast with small damage,Backup interrupt option
+WAR,action,proposed,steel_cyclone,Steel Cyclone,,Slow,TP,28,74,physical,enemy,new,Heavy AoE style tank burst after enemy action,Risky damage action
+WAR,action,proposed,rampart,Rampart,,Fast,TP,16,0,tank,self,new,Reduce self damage before enemy action,Personal tankbuster answer
+WAR,equipment,proposed,guardian_plate,Guardian Plate,Body,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Cover damage reduction plus defense,GDD example adapted
+WAR,equipment,proposed,berserker_axe,Berserker Axe,Weapon,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Upgrade Strike into Heavy Cleave,GDD example adapted
+WAR,equipment,proposed,hero_belt,Hero Belt,Relic,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Reduce damage below half HP,GDD example adapted
+WAR,equipment,proposed,helm_of_command,Helm of Command,Head,,,,,,self,new,Provoke also grants small guard,Supports tank planning
+WAR,passive,proposed,unyielding_line,Unyielding Line,,,,,,,passive,self,new,If WAR does not move gain defense this turn,Rewards holding front
+WAR,passive,proposed,protector_instinct,Protector Instinct,,,,,,,passive,self,new,Cover costs less when ally is below half HP,Emergency support build
+WAR,passive,proposed,battle_rhythm,Battle Rhythm,,,,,,,passive,self,new,Normal tank actions refund small TP if enemy targets WAR,Resource sustain
+WAR,passive,proposed,front_guard,Front Guard,,,,,,,passive,self,new,Take less damage from front range warnings,Position tank identity
+WHM,action,existing_current,smite,Smite,,Normal,MP,0,28,magic,enemy,player_actions.csv,Small holy damage,Default battle action
+WHM,action,existing_current,cure,Cure,,Fast,MP,8,92,heal,lowest_hp_ally,player_actions.csv,Heal lowest HP ally for double strength,Default battle action
+WHM,action,existing_current,cura,Cura,,Slow,MP,18,48,healAll,all_allies,player_actions.csv,Heal all allies after enemy action,Default battle action
+WHM,action,existing_current,esuna,Esuna,,Fast,MP,8,0,cleanse,debuffed_ally,player_actions.csv,Remove one debuff,Default battle action
+WHM,equipment,existing_current,oak_cane,Oak Cane,Weapon,,,,,,self,index.html,Improve Cure and Cura,Current lobby gear
+WHM,equipment,existing_current,pilgrim_hood,Pilgrim Hood,Head,,,,,,self,index.html,Magic focus and cleanse reliability,Current lobby gear
+WHM,equipment,existing_current,mender_robe,Mender Robe,Body,,,,,,self,index.html,Party recovery under pressure,Current lobby gear
+WHM,equipment,existing_current,lily_charm,Lily Charm,Relic,,,,,,self,index.html,Recover MP between turns,Current lobby gear
+WHM,equipment,existing_pool,sage_wand,Sage Wand,Weapon,,,,,,self,index.html,Trade healing for Smite damage,Swap pool
+WHM,equipment,existing_pool,lily_veil,Lily Veil,Head,,,,,,self,index.html,Helps healing timing,Swap pool
+WHM,equipment,existing_pool,chapel_robe,Chapel Robe,Body,,,,,,self,index.html,Adds MP comfort,Swap pool
+WHM,equipment,existing_pool,mercy_bell,Mercy Bell,Relic,,,,,,self,index.html,Boost emergency Cure,Swap pool
+WHM,passive,existing_pool,freecure,Freecure,,,,,,,passive,self,index.html,Cure can refund MP,Passive swap pool
+WHM,passive,existing_pool,thin_air,Thin Air,,,,,,,passive,self,index.html,First healing spell each wave costs less,Passive swap pool
+WHM,passive,existing_pool,regen_lily,Lily,,,,,,,passive,self,index.html,Small end-turn recovery for lowest ally,Passive swap pool
+WHM,action,proposed,regen,Regen,,Fast,MP,12,28,regen,lowest_hp_ally,new,Apply healing over turns before enemy action,Prevention healer choice
+WHM,action,proposed,protect,Protect,,Fast,MP,14,0,shield,targeted_ally,new,Reduce next hit on enemy-targeted ally,Position-light mitigation
+WHM,action,proposed,medica,Medica,,Normal,MP,20,36,healAll,all_allies,new,Moderate party heal before enemy action,Safer weaker Cura option
+WHM,action,proposed,holy,Holy,,Slow,MP,24,68,magicWeak,enemy,new,Slow holy damage and weakens enemy,Damage healer build
+WHM,equipment,proposed,seraph_cane,Seraph Cane,Weapon,,,,,,self,new,Grants Regen to action pool,Healing-over-time build
+WHM,equipment,proposed,warding_veil,Warding Veil,Head,,,,,,self,new,Protect lasts stronger on marked ally,Mechanic answer item
+WHM,equipment,proposed,liturgy_robe,Liturgy Robe,Body,,,,,,self,new,Cura heals more when party stacks,Stack mechanic support
+WHM,equipment,proposed,pearl_rosary,Pearl Rosary,Relic,,,,,,self,new,Esuna grants small shield after cleanse,Debuff utility item
+WHM,passive,proposed,swift_mend,Swift Mend,,,,,,,passive,self,new,First Slow heal after movement becomes Normal once per wave,Movement penalty relief
+WHM,passive,proposed,triage,Triage,,,,,,,passive,self,new,Cure targets lowest HP and adds bonus if below 35 percent,Emergency healer identity
+WHM,passive,proposed,calm_prayer,Calm Prayer,,,,,,,passive,self,new,Standing still refunds MP after healing,Position choice
+WHM,passive,proposed,clean_ward,Clean Ward,,,,,,,passive,self,new,Esuna also reduces next damage on cleansed ally,Debuff counter build
+BLM,action,existing_current,fire,Fire,,Normal,MP,8,46,magic,enemy,player_actions.csv,Single target fire damage,Default battle action
+BLM,action,existing_current,firaga,Firaga,,Slow,MP,22,90,magic,enemy,player_actions.csv,Large fire damage after enemy action,Default battle action
+BLM,action,existing_current,focus,Focus,,Fast,MP,0,0,buff,self,player_actions.csv,Increase next magic damage,Default battle action
+BLM,action,existing_current,blizzard,Ice,,Normal,MP,10,34,magicWeak,enemy,player_actions.csv,Damage and weaken next enemy action,Default battle action
+BLM,equipment,existing_current,ash_rod,Ash Rod,Weapon,,,,,,self,index.html,Raise fire and ice damage,Current lobby gear
+BLM,equipment,existing_current,void_hat,Void Hat,Head,,,,,,self,index.html,Improve spell focus,Current lobby gear
+BLM,equipment,existing_current,ember_coat,Ember Coat,Body,,,,,,self,index.html,Stronger delayed casts,Current lobby gear
+BLM,equipment,existing_current,mana_gem,Mana Gem,Relic,,,,,,self,index.html,Support high MP loadouts,Current lobby gear
+BLM,equipment,existing_pool,cinder_rod,Cinder Rod,Weapon,,,,,,self,index.html,Favor delayed burst spells,Swap pool
+BLM,equipment,existing_pool,star_cap,Star Cap,Head,,,,,,self,index.html,Help MP pacing,Swap pool
+BLM,equipment,existing_pool,frost_coat,Frost Coat,Body,,,,,,self,index.html,Improve Ice utility,Swap pool
+BLM,equipment,existing_pool,flare_shard,Flare Shard,Relic,,,,,,self,index.html,Push Firaga damage,Swap pool
+BLM,passive,existing_pool,firestarter,Starter,,,,,,,passive,self,index.html,Fire can empower next Firaga,Passive swap pool
+BLM,passive,existing_pool,umbral_ice,Umbral,,,,,,,passive,self,index.html,Ice restores a little MP,Passive swap pool
+BLM,passive,existing_pool,ley_lines,Ley,,,,,,,passive,self,index.html,Standing still boosts magic,Passive swap pool
+BLM,action,proposed,meteor,Meteor,,Slow,MP,34,120,magic,enemy,new,Very large delayed damage,Named GDD equipment action
+BLM,action,proposed,mana_barrier,Mana Barrier,,Fast,MP,16,0,shield,self,new,Shield self before enemy action,Safer alternate loadout
+BLM,action,proposed,transpose,Transpose,,Fast,MP,0,0,buff,self,new,Swap fire burst stance and ice recovery stance,Resource planning action
+BLM,action,proposed,thunder,Thunder,,Normal,MP,12,30,dot,enemy,new,Apply damage over turns,Damage pacing option
+BLM,equipment,proposed,ancient_grimoire,Ancient Grimoire,Relic,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Grants Meteor,GDD example adapted
+BLM,equipment,proposed,casting_ring,Casting Ring,Relic,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Slow magic damage boost,GDD example adapted
+BLM,equipment,proposed,flame_rod,Flame Rod,Weapon,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Fire damage boost,GDD example adapted
+BLM,equipment,proposed,ice_charm,Ice Charm,Head,,,,,,self,data/gdd/GDD_jobs_loadout_progression.md,Blizzard gains stronger weaken,GDD example adapted
+BLM,passive,proposed,teleport_mastery,Teleport Mastery,,,,,,,passive,self,data/gdd/GDD_jobs_loadout_progression.md,Equip to keep Teleport movement,Aligns GDD passive rule
+BLM,passive,proposed,astral_charge,Astral Charge,,,,,,,passive,self,new,After Focus next Slow spell gains more power,Reward setup turn
+BLM,passive,proposed,umbral_recovery,Umbral Recovery,,,,,,,passive,self,new,After Ice recover MP at end turn,Utility caster build
+BLM,passive,proposed,still_casting,Still Casting,,,,,,,passive,self,new,If BLM does not move Slow spells gain damage,Position risk reward
+DRG,action,existing_current,thrust,Thrust,,Normal,TP,0,42,physical,enemy,player_actions.csv,Basic melee attack,Default battle action
+DRG,action,existing_current,jump,Jump,,Fast,TP,18,56,jump,self_enemy,player_actions.csv,Avoid attacks then land after enemy action,Default battle action
+DRG,action,existing_current,dragon_dive,Dive,,Normal,TP,24,72,physical,enemy,player_actions.csv,High single target damage,Default battle action
+DRG,action,existing_current,leg_sweep,Sweep,,Fast,TP,16,18,interrupt,casting_enemy,player_actions.csv,Interrupt casts or deal small damage,Default battle action
+DRG,equipment,existing_current,iron_lance,Iron Lance,Weapon,,,,,,self,index.html,Raise Jump and Thrust damage,Current lobby gear
+DRG,equipment,existing_current,wyvern_helm,Wyvern Helm,Head,,,,,,self,index.html,Keep melee DPS sturdy,Current lobby gear
+DRG,equipment,existing_current,scale_mail,Scale Mail,Body,,,,,,self,index.html,Flexible armor for dives and movement,Current lobby gear
+DRG,equipment,existing_current,dragon_eye,Dragon Eye,Relic,,,,,,self,index.html,Improve burst windows and interrupts,Current lobby gear
+DRG,equipment,existing_pool,wyvern_spear,Wyvern Spear,Weapon,,,,,,self,index.html,Improve Dive windows,Swap pool
+DRG,equipment,existing_pool,sky_visor,Sky Visor,Head,,,,,,self,index.html,Help avoid marked zones,Swap pool
+DRG,equipment,existing_pool,lancer_coat,Lancer Coat,Body,,,,,,self,index.html,Favor speed over defense,Swap pool
+DRG,equipment,existing_pool,sky_fang,Sky Fang,Relic,,,,,,self,index.html,Improve Jump turns,Swap pool
+DRG,passive,existing_pool,blood_jump,Blood,,,,,,,passive,self,index.html,Jump restores TP on hit,Passive swap pool
+DRG,passive,existing_pool,dragon_sight,Sight,,,,,,,passive,self,index.html,Boost damage near tank,Passive swap pool
+DRG,passive,existing_pool,skewer,Skewer,,,,,,,passive,self,index.html,Thrust can weaken physical defense,Passive swap pool
+DRG,action,proposed,piercing_talon,Piercing Talon,,Fast,TP,10,30,physical,enemy,new,Quick ranged poke before enemy action,Mobile safe action
+DRG,action,proposed,chaos_thrust,Chaos Thrust,,Normal,TP,22,46,dot,enemy,new,Damage plus bleed over turns,Sustained DPS choice
+DRG,action,proposed,elusive_jump,Elusive Jump,,Fast,TP,14,0,jump,self,new,Move away and avoid next range warning,Movement tool
+DRG,action,proposed,stardiver,Stardiver,,Slow,TP,32,104,physical,enemy,new,Massive delayed jump strike,Risky burst option
+DRG,equipment,proposed,gale_lance,Gale Lance,Weapon,,,,,,self,new,Grants Piercing Talon to action pool,Fast DPS build
+DRG,equipment,proposed,visor_of_sight,Visor of Sight,Head,,,,,,self,new,Side and behind bonuses stronger,Position reward
+DRG,equipment,proposed,dragoon_harness,Dragoon Harness,Body,,,,,,self,new,Jump reduces more incoming range damage,Evasion build
+DRG,equipment,proposed,wyrmheart_charm,Wyrmheart Charm,Relic,,,,,,self,new,Leg Sweep refunds TP on successful interrupt,Cast counter reward
+DRG,passive,proposed,high_jump,High Jump,,,,,,,passive,self,new,Jump damage increases when enemy targets DRG,Greedy risk reward
+DRG,passive,proposed,flank_training,Flank Training,,,,,,,passive,self,new,Side attacks gain extra damage,Position identity
+DRG,passive,proposed,quick_landing,Quick Landing,,,,,,,passive,self,new,After Jump next action costs less TP,Rotation flow
+DRG,passive,proposed,dragons_resolve,Dragons Resolve,,,,,,,passive,self,new,If DRG ends near tank gain small shield,Co-op positioning

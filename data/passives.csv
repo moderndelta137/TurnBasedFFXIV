@@ -1,0 +1,29 @@
+id,job,status,name,icon,description,effect_type,effect_value
+iron_will,WAR,existing_pool,Iron Will,DEF,Start battle with extra threat.,threat,start
+last_stand,WAR,existing_pool,Last Stand,LAST,Once per wave survive lethal damage at 1 HP.,survive,once
+shield_oath,WAR,existing_pool,Oath,OATH,Guard Wall reduces slightly more damage.,upgrade,guard_wall
+unyielding_line,WAR,proposed,Unyielding Line,DEF,If WAR does not move gain defense this turn.,position,stand_still
+protector_instinct,WAR,proposed,Protector Instinct,COVER,Cover costs less when ally is below half HP.,cost,cover_low_hp
+battle_rhythm,WAR,proposed,Battle Rhythm,TP,Normal tank actions refund small TP if enemy targets WAR.,resource,tp_refund
+front_guard,WAR,proposed,Front Guard,FRONT,Take less damage from front range warnings.,position,front_guard
+freecure,WHM,existing_pool,Freecure,HEAL,Cure can refund MP.,resource,cure_refund
+thin_air,WHM,existing_pool,Thin Air,AIR,First healing spell each wave costs less.,cost,first_heal
+regen_lily,WHM,existing_pool,Lily,LILY,Small end-turn recovery for lowest ally.,heal,end_turn
+swift_mend,WHM,proposed,Swift Mend,FAST,First Slow heal after movement becomes Normal once per wave.,timing,slow_heal_move
+triage,WHM,proposed,Triage,HEAL,Cure gains bonus if target is below 35 percent HP.,heal,low_hp_bonus
+calm_prayer,WHM,proposed,Calm Prayer,MP,Standing still refunds MP after healing.,resource,stand_still_mp
+clean_ward,WHM,proposed,Clean Ward,WARD,Esuna also reduces next damage on cleansed ally.,shield,cleanse_shield
+firestarter,BLM,existing_pool,Starter,FIRE,Fire can empower next Firaga.,buff,fire_firaga
+umbral_ice,BLM,existing_pool,Umbral,ICE,Ice restores a little MP.,resource,ice_mp
+ley_lines,BLM,existing_pool,Ley,LEY,Standing still boosts magic.,position,stand_still_magic
+teleport_mastery,BLM,proposed,Teleport Mastery,TELE,Equip to keep Teleport movement.,movement,teleport
+astral_charge,BLM,proposed,Astral Charge,FIRE,After Focus next Slow spell gains more power.,buff,focus_slow
+umbral_recovery,BLM,proposed,Umbral Recovery,MP,After Ice recover MP at end turn.,resource,ice_end_mp
+still_casting,BLM,proposed,Still Casting,CAST,If BLM does not move Slow spells gain damage.,position,slow_stand
+blood_jump,DRG,existing_pool,Blood,JUMP,Jump restores TP on hit.,resource,jump_tp
+dragon_sight,DRG,existing_pool,Sight,EYE,Boosts damage when near tank.,position,near_tank
+skewer,DRG,existing_pool,Skewer,ATK,Thrust can weaken physical defense.,debuff,thrust_def
+high_jump,DRG,proposed,High Jump,JUMP,Jump damage increases when enemy targets DRG.,risk,jump_targeted
+flank_training,DRG,proposed,Flank Training,SIDE,Side attacks gain extra damage.,position,side_damage
+quick_landing,DRG,proposed,Quick Landing,TP,After Jump next action costs less TP.,resource,jump_discount
+dragons_resolve,DRG,proposed,Dragons Resolve,WARD,If DRG ends near tank gain small shield.,position,near_tank_shield

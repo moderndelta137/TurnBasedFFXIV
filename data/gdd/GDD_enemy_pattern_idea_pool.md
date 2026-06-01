@@ -215,7 +215,7 @@ Main lesson: persistent hazards plus stack/spread decisions.
 
 Pattern script:
 
-1. Cinder Drop leaves 2 burning cells.
+1. Cinder Drop leaves 3 burning cells.
 2. Chain Lightning forces spread around burn.
 3. Gravity Crush forces stack on remaining safe square.
 4. Furnace Roar tests mitigation.
@@ -286,12 +286,13 @@ Implemented first pass enemies:
 |---|---|---|
 | Ember Prophet | Burning Arena, Soak And Scatter | Adds persistent burning ground, wildfire bait, stack damage, and fire raidwide |
 | Storm Clockwork | Clockwise Execution, Tower Duty, Charged Doom | Adds rotating twin beams, one-player tower soak, interruptible charge, and charged raidwide |
-| Plague Chimera | Plague And Prison | Adds poison, Ice Prison movement lock, prison follow-up target, and corner blast |
+| Plague Chimera | Plague And Prison | Adds poison, Ice Prison movement lock, prison follow-up target, and wide edge blast |
 
 Implementation constraints:
 
-- Uses existing enemy sprite assets until bespoke sprites exist.
+- Uses generated bespoke enemy sprite assets for Ember Prophet, Storm Clockwork, and Plague Chimera.
 - Keeps tower count to 1 for first readability pass.
 - Ice Prison binds for one planning turn after application unless cleansed.
 - Burning ground persists briefly and damages players who stand on it.
 - Storm Clockwork rotating beam alternates between top/bottom and left/right lanes.
+- Current threat tuning makes the new bosses intentionally harsher: Cinder Drop marks 3 cells, Twin Beam and Dragon Voice are High danger, missed towers have a stronger raidwide punish, and Overclock Beam is near wipe-level without interrupt or mitigation.

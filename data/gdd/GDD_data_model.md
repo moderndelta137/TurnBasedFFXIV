@@ -272,6 +272,54 @@ The `defense` stat reduces physical player action damage. The `magic_defense` st
 
 ---
 
+### Enemy Action Sheet
+
+Current enemy action CSV schema:
+
+```text
+id,name,type,danger,hint,target_rule,range_rule,attack_modifier,effect_type,damage_type,provokeable,interruptible
+```
+
+Important fields:
+
+| Field | Meaning |
+|---|---|
+| `target_rule` | How the runtime chooses target or marked cells |
+| `range_rule` | Which grid pattern should warn and resolve |
+| `attack_modifier` | Enemy damage multiplier used by runtime tuning |
+| `effect_type` | Runtime behavior bucket such as damage, hazard, tower, charge, or debuff |
+| `provokeable` | Whether Warrior Provoke can redirect target |
+| `interruptible` | Whether Dragoon Leg Sweep cancels the action |
+
+Current expanded target rules include:
+
+| Target Rule | Meaning |
+|---|---|
+| `hazard_random` | Select random outer cells for persistent hazards |
+| `tower_random` | Select random outer cells that need a player soak |
+| `immobilized` | Prefer a player affected by Ice Prison |
+
+Current expanded range rules include:
+
+| Range Rule | Meaning |
+|---|---|
+| `hazard_cells` | Warns cells that become burning ground |
+| `rotating_laser` | Warns alternating outer lanes |
+| `tower_cells` | Warns tower soak cells |
+| `edge_blast` | Warns top and bottom outer rows |
+
+### Enemy Action Set Sheet
+
+Current enemy action set CSV schema:
+
+```text
+set_id,turn_order,action_id,weight,hp_below_pct
+```
+
+The current runtime uses `turn_order` as a looping sequence. `weight` and `hp_below_pct` are reserved for future weighted or phase-gated selection.
+
+---
+
 ### Passive
 
 ---

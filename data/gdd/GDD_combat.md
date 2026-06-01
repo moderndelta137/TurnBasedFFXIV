@@ -67,6 +67,11 @@ Heavy Smash → WHM
 | AoE attack | Earth Roar | Guard Wall, Cura |
 | Tankbuster | Skull Crusher | Tank guard, mitigation |
 | Debuff | Crush Armor | Esuna, cleanse |
+| Persistent hazard | Cinder Drop | Avoid burning cells over multiple turns |
+| Tower soak | Clock Tower | Assign one player to the marked square |
+| Bind / prison | Ice Prison | Esuna, Cover, or protect the trapped ally |
+| Rotating pattern | Twin Beam | Track the next safe side and pre-position |
+| Charge attack | Overclock | Interrupt or prepare mitigation |
 | Buff | Rage | Burst damage, dispel in future |
 | Interruptible cast | Brutal Cast | Leg Sweep |
 | Boss special | Meteor Cast | Specific mechanic response |
@@ -156,6 +161,10 @@ Enemy threat hits should be tuned around clear pass / fail counterplay.
 - Correctly shared stack mechanics may use a lower per-character damage floor.
 - Interruptible casts should be severe when missed and harmless when interrupted.
 - Healing should recover from one mistake, but repeated mistakes should still kill.
+- New prototype boss mechanics intentionally trend harsher for verification:
+  - Unsoaked towers can exceed the normal failed-mechanic floor.
+  - Charged raidwide attacks should feel close to wipe-level if not interrupted or mitigated.
+  - Persistent hazards should create turn-to-turn pressure, not instant unavoidable kills.
 
 ---
 
@@ -379,6 +388,11 @@ Each role should have moments where its action is the best answer.
 | High HP enemy | DPS burst |
 | Multiple enemies | Black Mage Firaga |
 | Low HP execution attack | Fast heal / Cover |
+| Persistent floor hazard | Movement planning / safe tile preservation |
+| Tower soak | Assigned player movement and mitigation |
+| Bind / prison follow-up | Esuna / Cover / Guard Wall |
+| Rotating laser | Pattern tracking and pre-positioning |
+| Multi-turn charge | Dragoon interrupt or planned mitigation |
 
 ---
 
@@ -413,4 +427,43 @@ Iron Ogre should teach:
 - How Healer recovery works
 - How Dragoon interrupt works
 - How Black Mage slow casts create risk and reward
+
+## 12.3 Prototype Expansion Bosses
+
+The current prototype route includes six randomized enemy waves. Three new bosses add more raid-like mechanics for verification and tuning.
+
+### Ember Prophet
+
+Theme: fire floor, safe-square preservation, and stack pressure.
+
+| Action | Type | Target / Area | Counter |
+|---|---|---|---|
+| Cinder Drop | Fire hazard | 3 random outer squares | Avoid marked cells; preserve stack lanes |
+| Wildfire Bait | Fire chase | Targeted player square | Bait away from shared safe tiles |
+| Gravity Crush | Stack / magic | Targeted player square | Gather to share damage |
+| Furnace Roar | Raidwide fire | All players | Guard Wall, Cura, recovery |
+
+### Storm Clockwork
+
+Theme: predictable rotating lasers, tower assignment, and charge punish.
+
+| Action | Type | Target / Area | Counter |
+|---|---|---|---|
+| Twin Beam | Rotating laser | Top/bottom or left/right outer lanes | Move to next safe side |
+| Clock Tower | Tower soak | 1 marked outer square | One living player stands in tower |
+| Overclock | Interruptible charge | Boss self-charge | Leg Sweep |
+| Overclock Beam | Charged raidwide | All players | Interrupt earlier, or Guard Wall + Cura |
+
+### Plague Chimera
+
+Theme: healer cleanse priority and trapped-player protection.
+
+| Action | Type | Target / Area | Counter |
+|---|---|---|---|
+| Toxic Needle | Poison debuff | Weak non-tank target | Esuna or heal through |
+| Ice Prison | Bind / magic | Random target | Esuna, Cover, or Guard Wall |
+| Shatter Lock | Prison punish | Imprisoned target | Cover if prison remains |
+| Dragon Voice | Wide edge blast | Top and bottom outer rows | Move to side-middle safe cells |
+
+Design note: these enemies are currently randomized for faster mechanic verification. Final progression should reorder and retune them once their readability is proven.
 

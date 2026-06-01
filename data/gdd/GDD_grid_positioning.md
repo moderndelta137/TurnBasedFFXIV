@@ -284,6 +284,10 @@ During action resolution, hide movement-choice borders and selected-destination 
 | AoE All | Hits all characters regardless of position |
 | Stack Marker | Damage must be shared by characters on the same square |
 | Safe Zone Attack | Most squares are dangerous, specific squares are safe |
+| Persistent Hazard | Marked cells remain dangerous for several turns |
+| Tower Soak | Marked cell must contain at least one living player |
+| Rotating Laser | Alternates lanes across turns |
+| Edge Blast | Hits top and bottom outer rows, leaving side-middle safe |
 
 ### Example: Front Cleave
 
@@ -321,6 +325,21 @@ The boss targets one character with a stack marker.
 All characters on the same square share the damage.
 
 The Tank may need to move to the target’s square and use a protection skill.
+
+### Current Expanded Patterns
+
+The prototype now includes these extra grid patterns:
+
+| Pattern | Runtime Example | Grid Behavior |
+|---|---|---|
+| Fire hazard | Cinder Drop | 3 outer squares become burning cells for 2 turns |
+| Baited fire | Wildfire Bait | Targeted player's square becomes burning ground |
+| Rotating laser | Twin Beam | Alternates between top/bottom lanes and left/right lanes |
+| Tower soak | Clock Tower | 1 marked outer cell needs a player standing on it |
+| Wide edge blast | Dragon Voice | Top and bottom outer rows are dangerous |
+| Movement lock | Ice Prison | Target cannot choose a new movement destination until cleansed or expired |
+
+Persistent hazards should never cover so much of the 4x4 grid that stack, tower, or prison counterplay becomes impossible. First-pass limit is 3 fire cells plus existing boss warnings.
 
 ---
 

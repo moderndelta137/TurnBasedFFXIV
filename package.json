@@ -5,6 +5,7 @@
   "description": "Mobile-first co-op turn-based RPG prototype.",
   "type": "module",
   "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs"
   }
